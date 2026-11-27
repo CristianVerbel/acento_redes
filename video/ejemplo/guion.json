@@ -1,0 +1,30 @@
+{
+  "credito": "Video: @canal1colombia",
+  "portada": {
+    "titular": "Titular de prueba para la portada del reel de Canal 1",
+    "foto": "foto.jpg"
+  },
+  "escenas": [
+    {
+      "tipo": "foto",
+      "src": "foto.jpg",
+      "dur": 3,
+      "antetitulo": "Bogotá",
+      "texto": "Así se ve una escena con foto",
+      "bajada": "Una bajada corta para dar contexto."
+    },
+    {
+      "tipo": "video",
+      "src": "video.mp4",
+      "desde": 0,
+      "hasta": 4,
+      "antetitulo": "En video",
+      "texto": "Y así una escena con video horizontal"
+    },
+    {
+      "tipo": "cierre",
+      "dur": 3
+    }
+  ],
+  "_nota": "Ejemplo: pon foto.jpg y video.mp4 junto a este guion y corre  python3 video/reel.py video/ejemplo/guion.json salida/reel.mp4"
+}
