@@ -1,0 +1,35 @@
+{
+  "_nota": "Marca L1BRE. Colores sacados del logo; tipografía Montserrat (libre, OFL), la más cercana a la del logo. El dominio sigue siendo canal1.com.co hasta que se confirme otro.",
+  "nombre": "L1BRE",
+  "dominio": "canal1.com.co",
+  "colores": {
+    "fondo": "#092A71",
+    "acento": "#F7B314",
+    "texto_acento": "#092A71",
+    "panel": "#E1E2E3",
+    "tinta": "#092A71",
+    "bajada": "#DCE6F7",
+    "subtitulos": "#F7B314"
+  },
+  "colores_secundarios": {
+    "azul": "#4186E5",
+    "azul_medio": "#3471CC"
+  },
+  "fuentes": {
+    "titular": "Montserrat-ExtraBold.ttf",
+    "entrada": "Montserrat-Bold.ttf",
+    "credito": "Montserrat-SemiBold.ttf",
+    "texto": "Montserrat-Medium.ttf",
+    "familia_subtitulos": "Montserrat"
+  },
+  "logos": {
+    "blanco": "logo-blanco.png",
+    "color": "logo-color.png"
+  },
+  "musica": null,
+  "cierre": {
+    "texto": "Más noticias en canal1.com.co",
+    "bajada": "canal1.com.co · enlace en la bio"
+  },
+  "pie_post_instagram": "La nota completa, en canal1.com.co (enlace en la bio)."
+}

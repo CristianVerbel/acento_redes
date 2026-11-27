@@ -3,7 +3,7 @@
 reel.py: capas PNG transparentes en 1080x1920, pauta (si la marca o el
 pedido la trae) lista para encima, portada, cierre, fuentes, música y la guía.
 
-La marca sale de marca/<nombre>/marca.json (MARCA=<carpeta>, por defecto canal1).
+La marca sale de marca/<nombre>/marca.json (MARCA=<carpeta>, por defecto l1bre).
 
 Uso:  python3 kit_capcut.py carpeta_de_salida [pauta.mp4]
 """

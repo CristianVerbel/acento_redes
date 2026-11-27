@@ -3,12 +3,12 @@
 `reel.py` arma reels verticales (1080x1920, 30 fps) a partir de videos y fotos,
 cada escena con su texto. Es el generador de reels de Acento, separado de su
 marca: colores, fuentes, logos, música y textos salen de
-`marca/<nombre>/marca.json`. Por defecto usa `marca/canal1`.
+`marca/<nombre>/marca.json`. Por defecto usa `marca/l1bre`.
 
 Requisitos: Python 3 con Pillow, y `ffmpeg`/`ffprobe` en el PATH.
 
 ```bash
-python3 video/reel.py guion.json salida.mp4                # marca Canal 1
+python3 video/reel.py guion.json salida.mp4                # marca L1BRE
 MARCA=otra python3 video/reel.py guion.json salida.mp4     # otra carpeta de marca/
 python3 video/kit_capcut.py kit/ [pauta.mp4]               # capas para editar a mano en CapCut
 ```
@@ -47,21 +47,24 @@ Ver `ejemplo/guion.json`. Las rutas son relativas al guion.
 
 ## La marca
 
-`marca/canal1/marca.json` define:
+`marca/l1bre/marca.json` define:
 
 - `colores`: `fondo` (degradados, velo, cierre), `acento` (barra del titular,
   caja del antetítulo, franjas del cierre), `texto_acento`, `panel` y `tinta`
   (portada), `bajada`, `subtitulos`.
 - `fuentes`: un archivo `.ttf` por rol (`titular`, `entrada`, `credito`,
   `texto`) y `familia_subtitulos` (nombre de familia para ffmpeg). Se buscan en
-  `marca/canal1/`, `marca/canal1/fuentes/` y `video/assets/fuentes/`.
+  `marca/l1bre/`, `marca/l1bre/fuentes/` y `video/assets/fuentes/`.
 - `logos`: `blanco` (sobre video y cierre) y `color` (portada), PNG con
-  transparencia en `marca/canal1/`. Mientras no estén, se pinta el nombre.
+  transparencia en `marca/l1bre/`. Si faltan, se pinta el nombre.
 - `musica`: archivo de la carpeta de la marca, o `null` (sin música).
 - `cierre`: textos de la tarjeta final.
 
-**Pendiente:** los colores, las fuentes y los logos de Canal 1 son
-provisionales hasta tener su manual de marca.
+L1BRE: azul `#092A71` de fondo, amarillo `#F7B314` de acento (barra del
+titular, caja del antetítulo con letra azul, subtítulos) y los azules
+`#4186E5`/`#3471CC` del ícono. Tipografía Montserrat (OFL, en
+`marca/l1bre/fuentes/`). Los logos, sin el lema, salen de la imagen original con
+`marca/l1bre/original/extraer_logo.py`.
 
 ## Publicarlo
 

@@ -3,7 +3,7 @@
 
 Copiado del generador de reels de Acento y separado de su marca: colores,
 fuentes, logos, música y textos salen de `marca/<nombre>/marca.json`
-(por defecto `marca/canal1`; otra con MARCA=<carpeta>).
+(por defecto `marca/l1bre`; otra con MARCA=<carpeta>).
 
 Combina videos y fotos en escenas, cada una con su texto: logo arriba,
 degradado del color de fondo abajo, titular con barra de color, subtítulos

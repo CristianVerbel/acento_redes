@@ -1,4 +1,4 @@
-# Reels de Canal 1 en CapCut: guía del equipo
+# Reels de L1BRE en CapCut: guía del equipo
 
 Este kit trae todo para editar a mano un reel con el mismo diseño de los
 reels que arma `reel.py`. Todas las capas PNG y las pautas están en **1080x1920**:

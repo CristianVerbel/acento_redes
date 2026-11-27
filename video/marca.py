@@ -1,7 +1,7 @@
 """Carga la marca (colores, fuentes, logos, música, textos) de `marca/<nombre>/marca.json`.
 
 El generador de reels y el kit de CapCut no llevan ninguna marca escrita en el
-código: todo sale de aquí. Por defecto se usa `marca/canal1`; otra marca se
+código: todo sale de aquí. Por defecto se usa `marca/l1bre`; otra marca se
 elige con la variable de entorno MARCA (nombre de carpeta o ruta).
 """
 import json, os
@@ -19,7 +19,7 @@ def _rgb(h):
 
 class Marca:
     def __init__(self, ruta=None):
-        ruta = ruta or os.environ.get("MARCA") or "canal1"
+        ruta = ruta or os.environ.get("MARCA") or "l1bre"
         if not os.path.isdir(ruta):
             ruta = os.path.join(RAIZ, "marca", ruta)
         self.dir = os.path.abspath(ruta)

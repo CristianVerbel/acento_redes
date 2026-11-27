@@ -1,7 +1,7 @@
 # acento_redes
 
 App de generación y publicación de posts de redes sociales, adaptada para
-**Canal 1** (canal1.com.co).
+**L1BRE**, de Canal 1 (canal1.com.co).
 
 Parte de dos piezas de Acento Colombia (`CristianVerbel/acentocolombia`),
 copiadas aquí y separadas de la marca Acento:
@@ -9,7 +9,7 @@ copiadas aquí y separadas de la marca Acento:
 | Carpeta | Qué es | De dónde viene |
 |---|---|---|
 | `video/` | Generador de reels 1080x1920 (Python + ffmpeg) y kit para CapCut | `scripts/reels/` |
-| `marca/canal1/` | Colores, fuentes, logos, música y textos de Canal 1 | nuevo |
+| `marca/l1bre/` | Logos, colores, fuentes y textos de L1BRE | nuevo |
 | `supabase/` | Gestor de redes: cola de publicaciones, envío con ritmo a Instagram, Facebook y X, métricas y limpieza | `supabase/functions/publicador-co/` (`redes.ts` y la cola) |
 
 Lo de Acento que **no** se copió: la redacción automática de notas con IA,
@@ -58,9 +58,11 @@ Va en un proyecto de Supabase propio para Canal 1.
    Cada red se enciende sola cuando tiene sus credenciales.
 4. Dar de alta al equipo: `insert into equipo_redes (user_id, rol) values ('<uuid>', 'admin');`
 
-## Pendiente para Canal 1
+## Pendiente
 
-- Manual de marca: colores, tipografías y logos (PNG blanco y a color) en
-  `marca/canal1/`. Los valores actuales son provisionales.
+- Confirmar el dominio de L1BRE (por ahora, canal1.com.co en el cierre y en
+  el crédito) y si el logo existe en vector: los PNG de `marca/l1bre/` salen
+  de una imagen (`marca/l1bre/original/extraer_logo.py`).
+- Confirmar la tipografía: se usa Montserrat, la libre más cercana a la del logo.
 - Música propia (opcional) y, si aplica, la pauta de sus anunciantes.
 - Cuentas de Meta y X de Canal 1 con acceso a la API.
